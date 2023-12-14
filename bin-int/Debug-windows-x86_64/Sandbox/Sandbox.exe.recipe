@@ -2,10 +2,10 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>D:\K_GameEngine\KGameEngine\bin\Debug-x64\KGameEngine\KGameEngine.dll</FullPath>
+      <FullPath>D:\K_GameEngine\KGameEngine\bin\Debug-windows-x86_64\KGameEngine\KGameEngine.dll</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>D:\K_GameEngine\KGameEngine\bin\Debug-x64\Sandbox\Sandbox.exe</FullPath>
+      <FullPath>D:\K_GameEngine\KGameEngine\bin\Debug-windows-x86_64\Sandbox\Sandbox.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

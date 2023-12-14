@@ -15,7 +15,7 @@ project "KGameEngine"
 	kind "SharedLib"
 	language "C++"
 
-	tragetdir ("bin/" .. outputdir .. "/%{prj.name}")
+	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
 	files
@@ -24,7 +24,7 @@ project "KGameEngine"
 		"%{prj.name}/src/**.cpp"
 	}
 
-	include 
+	includedirs 
 	{
 		"%{prj.name}/ThirdParty/spdlog/include"
 	}
@@ -63,7 +63,7 @@ project "Sandbox"
 	kind "ConsoleApp"
 	language "C++"
 
-	tragetdir ("bin/" .. outputdir .. "/%{prj.name}")
+	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
 	files
@@ -72,9 +72,10 @@ project "Sandbox"
 		"%{prj.name}/src/**.cpp"
 	}
 
-	include 
+	includedirs 
 	{
-		"%{prj.name}/ThirdParty/spdlog/include"
+		"KGameEngine/ThirdParty/spdlog/include",
+		"KGameEngine/src"
 	}
 
 	links
