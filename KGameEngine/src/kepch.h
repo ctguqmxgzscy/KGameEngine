@@ -12,6 +12,8 @@
 #include <unordered_map>
 #include <unordered_set>
 
+#include <KEngine/Log.h>
+
 #ifdef KE_PLATFORM_WINDOWS
 	#include <Windows.h>	
 #endif

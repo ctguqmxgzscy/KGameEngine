@@ -7,6 +7,9 @@
     <Filter Include="KEngine\Events">
       <UniqueIdentifier>{2A36F034-1604-E43A-FF97-5461EB04C09F}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\KEngine\Application.h">
@@ -36,6 +39,12 @@
     <ClInclude Include="src\KEngine\Log.h">
       <Filter>KEngine</Filter>
     </ClInclude>
+    <ClInclude Include="src\KEngine\Window.h">
+      <Filter>KEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\WindowsWindow.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
     <ClInclude Include="src\kepch.h" />
   </ItemGroup>
   <ItemGroup>
@@ -44,6 +53,9 @@
     </ClCompile>
     <ClCompile Include="src\KEngine\Log.cpp">
       <Filter>KEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\WindowsWindow.cpp">
+      <Filter>Platform</Filter>
     </ClCompile>
     <ClCompile Include="src\kepch.cpp" />
   </ItemGroup>

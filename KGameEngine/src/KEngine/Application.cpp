@@ -2,35 +2,28 @@
 #include "Application.h"
 
 #include "KEngine/Events/ApplicationEvent.h"
-#include "KEngine/Log.h"
+
+#include <GLFW/glfw3.h>
 
 namespace KEngine {
 
 	Application::Application()
 	{
-
+		m_Window = std::unique_ptr<Window>(Window::Create());
 	}
 
 	Application::~Application()
 	{
-
 	}
 
 	void Application::Run()
 	{
-		WindowResizeEvent e(1280, 720);
-		if (e.IsInCategory(EventCategoryApplication))
-		{
-			KE_TRACE(e);
-		}
-		if (e.IsInCategory(EventCategoryInput))
-		{
-			KE_TRACE(e);
-		}
 
-		while (true)
+		while (m_Running)
 		{
-
+			glClearColor(1, 0, 1, 1);
+			glClear(GL_COLOR_BUFFER_BIT);
+			m_Window->OnUpdate();
 		}
 	}
 

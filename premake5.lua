@@ -10,6 +10,12 @@ workspace "KGameEngine"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+-- Include directories relative to root folder (solution directory)
+IncludeDir = {}
+IncludeDir["GLFW"] = "KGameEngine/ThirdParty/GLFW/Include"
+
+include "KGameEngine/ThirdParty/GLFW"
+
 project "KGameEngine"
 	location "KGameEngine"
 	kind "SharedLib"
@@ -30,7 +36,14 @@ project "KGameEngine"
 	includedirs 
 	{
 		"%{prj.name}/src",
-		"%{prj.name}/ThirdParty/spdlog/include"
+		"%{prj.name}/ThirdParty/spdlog/include",
+		"%{IncludeDir.GLFW}"
+	}
+
+	links
+	{
+		"GLFW",
+		"opengl32.lib"
 	}
 
 	filter "system:windows"
