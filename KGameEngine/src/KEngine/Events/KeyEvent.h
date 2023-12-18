@@ -2,8 +2,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace KEngine {
 
 	class KENGINE_API KeyEvent : public Event

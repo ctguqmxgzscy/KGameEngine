@@ -1,3 +1,4 @@
+#include "kepch.h"
 #include "Application.h"
 
 #include "KEngine/Events/ApplicationEvent.h"
@@ -17,8 +18,15 @@ namespace KEngine {
 
 	void Application::Run()
 	{
-		WindowResizeEvent event(1280, 720);
-		KE_TRACE(event);
+		WindowResizeEvent e(1280, 720);
+		if (e.IsInCategory(EventCategoryApplication))
+		{
+			KE_TRACE(e);
+		}
+		if (e.IsInCategory(EventCategoryInput))
+		{
+			KE_TRACE(e);
+		}
 
 		while (true)
 		{

@@ -18,6 +18,9 @@ project "KGameEngine"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+	pchheader "kepch.h"
+	pchsource "KGameEngine/src/kepch.cpp"
+
 	files
 	{
 		"%{prj.name}/src/**.h",

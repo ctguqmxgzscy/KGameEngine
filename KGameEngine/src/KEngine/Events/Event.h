@@ -1,9 +1,7 @@
 #pragma once
 
+#include "kepch.h"
 #include "KEngine/Core.h"
-
-#include <string>
-#include <functional>
 
 namespace KEngine {
 
