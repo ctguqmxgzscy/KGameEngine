@@ -12,9 +12,11 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
 -- Include directories relative to root folder (solution directory)
 IncludeDir = {}
-IncludeDir["GLFW"] = "KGameEngine/ThirdParty/GLFW/Include"
+IncludeDir["GLFW"] = "KGameEngine/ThirdParty/GLFW/include"
+IncludeDir["Glad"] = "KGameEngine/ThirdParty/Glad/include"
 
 include "KGameEngine/ThirdParty/GLFW"
+include "KGameEngine/ThirdParty/Glad"
 
 project "KGameEngine"
 	location "KGameEngine"
@@ -37,12 +39,14 @@ project "KGameEngine"
 	{
 		"%{prj.name}/src",
 		"%{prj.name}/ThirdParty/spdlog/include",
-		"%{IncludeDir.GLFW}"
+		"%{IncludeDir.GLFW}",
+		"%{IncludeDir.Glad}"
 	}
 
 	links
 	{
 		"GLFW",
+		"Glad",
 		"opengl32.lib"
 	}
 
@@ -55,6 +59,7 @@ project "KGameEngine"
 		{
 			"KE_BUILD_DLL",
 			"KE_PLATFORM_WINDOWS",	
+			"GLFW_INCLUDE_NONE"
 		}
 
 		postbuildcommands
