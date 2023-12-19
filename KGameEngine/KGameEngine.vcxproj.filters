@@ -36,6 +36,12 @@
     <ClInclude Include="src\KEngine\KEngine.h">
       <Filter>KEngine</Filter>
     </ClInclude>
+    <ClInclude Include="src\KEngine\Layer.h">
+      <Filter>KEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KEngine\LayerStack.h">
+      <Filter>KEngine</Filter>
+    </ClInclude>
     <ClInclude Include="src\KEngine\Log.h">
       <Filter>KEngine</Filter>
     </ClInclude>
@@ -49,6 +55,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\KEngine\Application.cpp">
+      <Filter>KEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KEngine\Layer.cpp">
+      <Filter>KEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KEngine\LayerStack.cpp">
       <Filter>KEngine</Filter>
     </ClCompile>
     <ClCompile Include="src\KEngine\Log.cpp">

@@ -64,14 +64,17 @@ project "KGameEngine"
 
 	filter "configurations:Debug"
 		defines "KE_DEBUG"
+		buildoptions "/MDd"
 		symbols "On"
 
 	filter "configurations:Release"
 		defines "KE_RELEASE"
+		buildoptions "/MD"
 		symbols "On"
 
 	filter "configurations:Dist"
 		defines "KE_DIST"
+		buildoptions "/MD"
 		symbols "On"
 	
 
@@ -112,12 +115,15 @@ project "Sandbox"
 
 	filter "configurations:Debug"
 		defines "KE_DEBUG"
+		buildoptions "/MDd"
 		symbols "On"
 
 	filter "configurations:Release"
 		defines "KE_RELEASE"
+		buildoptions "/MD"
 		symbols "On"
 
 	filter "configurations:Dist"
 		defines "KE_DIST"
+		buildoptions "/MD"
 		symbols "On"
