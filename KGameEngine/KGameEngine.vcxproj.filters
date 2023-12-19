@@ -7,8 +7,17 @@
     <Filter Include="KEngine\Events">
       <UniqueIdentifier>{2A36F034-1604-E43A-FF97-5461EB04C09F}</UniqueIdentifier>
     </Filter>
+    <Filter Include="KEngine\ImGui">
+      <UniqueIdentifier>{B0CE97EA-1C8F-1321-E5C9-5C9E514958FD}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Platform">
       <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\OpenGL">
+      <UniqueIdentifier>{1E7D2C1D-8A08-9AE1-9319-1DD6FF23F6E1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Windows">
+      <UniqueIdentifier>{64FBD71A-50F4-F66C-7926-DCF1657ED678}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -33,6 +42,12 @@
     <ClInclude Include="src\KEngine\Events\MouseEvent.h">
       <Filter>KEngine\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\KEngine\ImGui\ImGuiLayer.h">
+      <Filter>KEngine\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\KEngine\ImGui\imgui_impl_opengl3_loader.h">
+      <Filter>KEngine\ImGui</Filter>
+    </ClInclude>
     <ClInclude Include="src\KEngine\KEngine.h">
       <Filter>KEngine</Filter>
     </ClInclude>
@@ -48,14 +63,20 @@
     <ClInclude Include="src\KEngine\Window.h">
       <Filter>KEngine</Filter>
     </ClInclude>
-    <ClInclude Include="src\Platform\WindowsWindow.h">
-      <Filter>Platform</Filter>
+    <ClInclude Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.h">
+      <Filter>Platform\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
+      <Filter>Platform\Windows</Filter>
     </ClInclude>
     <ClInclude Include="src\kepch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\KEngine\Application.cpp">
       <Filter>KEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\KEngine\ImGui\ImGuiLayer.cpp">
+      <Filter>KEngine\ImGui</Filter>
     </ClCompile>
     <ClCompile Include="src\KEngine\Layer.cpp">
       <Filter>KEngine</Filter>
@@ -66,8 +87,11 @@
     <ClCompile Include="src\KEngine\Log.cpp">
       <Filter>KEngine</Filter>
     </ClCompile>
-    <ClCompile Include="src\Platform\WindowsWindow.cpp">
-      <Filter>Platform</Filter>
+    <ClCompile Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.cpp">
+      <Filter>Platform\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
+      <Filter>Platform\Windows</Filter>
     </ClCompile>
     <ClCompile Include="src\kepch.cpp" />
   </ItemGroup>

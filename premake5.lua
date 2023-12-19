@@ -14,9 +14,11 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 IncludeDir = {}
 IncludeDir["GLFW"] = "KGameEngine/ThirdParty/GLFW/include"
 IncludeDir["Glad"] = "KGameEngine/ThirdParty/Glad/include"
+IncludeDir["ImGui"] = "KGameEngine/ThirdParty/imgui"
 
 include "KGameEngine/ThirdParty/GLFW"
 include "KGameEngine/ThirdParty/Glad"
+include "KGameEngine/ThirdParty/imgui"
 
 project "KGameEngine"
 	location "KGameEngine"
@@ -40,13 +42,15 @@ project "KGameEngine"
 		"%{prj.name}/src",
 		"%{prj.name}/ThirdParty/spdlog/include",
 		"%{IncludeDir.GLFW}",
-		"%{IncludeDir.Glad}"
+		"%{IncludeDir.Glad}",
+		"%{IncludeDir.ImGui}"
 	}
 
 	links
 	{
 		"GLFW",
 		"Glad",
+		"ImGui",
 		"opengl32.lib"
 	}
 
