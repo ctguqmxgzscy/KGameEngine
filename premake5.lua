@@ -15,6 +15,7 @@ IncludeDir = {}
 IncludeDir["GLFW"] = "KGameEngine/ThirdParty/GLFW/include"
 IncludeDir["Glad"] = "KGameEngine/ThirdParty/Glad/include"
 IncludeDir["ImGui"] = "KGameEngine/ThirdParty/imgui"
+IncludeDir["glm"] = "KGameEngine/ThirdParty/glm"
 
 include "KGameEngine/ThirdParty/GLFW"
 include "KGameEngine/ThirdParty/Glad"
@@ -34,7 +35,9 @@ project "KGameEngine"
 	files
 	{
 		"%{prj.name}/src/**.h",
-		"%{prj.name}/src/**.cpp"
+		"%{prj.name}/src/**.cpp",
+		"%{prj.name}/ThirdParty/glm/glm/**.hpp",
+		"%{prj.name}/ThirdParty/glm/glm/**.inl"
 	}
 
 	includedirs 
@@ -43,7 +46,8 @@ project "KGameEngine"
 		"%{prj.name}/ThirdParty/spdlog/include",
 		"%{IncludeDir.GLFW}",
 		"%{IncludeDir.Glad}",
-		"%{IncludeDir.ImGui}"
+		"%{IncludeDir.ImGui}",
+		"%{IncludeDir.glm}"
 	}
 
 	links
@@ -104,7 +108,9 @@ project "Sandbox"
 	includedirs 
 	{
 		"KGameEngine/ThirdParty/spdlog/include",
-		"KGameEngine/src"
+		"KGameEngine/src",
+		"KGameEngine/ThirdParty/imgui",
+		"%{IncludeDir.glm}"
 	}
 
 	links

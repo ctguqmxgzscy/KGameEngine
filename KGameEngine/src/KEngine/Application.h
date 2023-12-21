@@ -7,6 +7,8 @@
 #include "KEngine/Events/Event.h"
 #include "KEngine/Events/ApplicationEvent.h"
 
+#include "KEngine/ImGui/ImGuiLayer.h"
+
 namespace KEngine {
 
 	class KENGINE_API Application
@@ -28,6 +30,7 @@ namespace KEngine {
 		
 		bool m_Running = true;
 		std::unique_ptr<Window> m_Window;
+		ImGuiLayer* m_ImGuiLayer;
 		LayerStack m_LayerStack;
 
 	private:

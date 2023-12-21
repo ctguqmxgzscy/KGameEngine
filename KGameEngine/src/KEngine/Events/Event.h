@@ -77,4 +77,5 @@ namespace KEngine {
 	{
 		return os << e.ToString();
 	}
+
 }
