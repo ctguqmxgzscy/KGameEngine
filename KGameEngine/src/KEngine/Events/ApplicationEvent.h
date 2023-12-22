@@ -10,8 +10,8 @@ namespace KEngine {
 		WindowResizeEvent(unsigned int width, unsigned int height)
 			: m_Width(width), m_Height(height) {}
 
-		inline float GetWidth() const { return m_Width; }
-		inline float GetHeight() const { return m_Height; }
+		inline float GetWidth() const { return (float)m_Width; }
+		inline float GetHeight() const { return (float)m_Height; }
 
 		std::string ToString() const override
 		{

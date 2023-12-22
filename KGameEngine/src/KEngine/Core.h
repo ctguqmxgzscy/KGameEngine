@@ -1,11 +1,15 @@
 #pragma once
 
 #ifdef KE_PLATFORM_WINDOWS
-	#ifdef KE_BUILD_DLL
-		#define KENGINE_API __declspec(dllexport)
+	#if KE_DYNAMIC_LINK
+		#ifdef KE_BUILD_DLL
+			#define KENGINE_API __declspec(dllexport)
+		#else
+			#define KENGINE_API __declspec(dllimport)
+		#endif // KE_BUILD_DLL
 	#else
-		#define KENGINE_API __declspec(dllimport)
-	#endif // KE_BUILD_DLL
+		#define KENGINE_API
+	#endif
 #else
 	#error KEngine Only Support Windows!
 #endif
