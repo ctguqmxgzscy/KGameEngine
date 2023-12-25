@@ -43,6 +43,11 @@ project "KGameEngine"
 		"%{prj.name}/ThirdParty/glm/glm/**.inl"
 	}
 
+	defines
+	{
+		"_CRT_SECURE_NO_WARNINGS"
+	}
+
 	includedirs 
 	{
 		"%{prj.name}/src",

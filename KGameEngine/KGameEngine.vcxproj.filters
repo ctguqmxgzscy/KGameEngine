@@ -1350,6 +1350,12 @@
     <ClInclude Include="src\kepch.h">
       <Filter>src</Filter>
     </ClInclude>
+    <ClInclude Include="src\Platform\OpenGL\OpenGLContext.h" />
+    <ClInclude Include="src\KEngine\Renderer\GraphicsContext.h" />
+    <ClInclude Include="src\KEngine\Renderer\Shader.h" />
+    <ClInclude Include="src\KEngine\Renderer\Buffer.h" />
+    <ClInclude Include="src\Platform\OpenGL\OpenGLBuffer.h" />
+    <ClInclude Include="src\KEngine\Renderer\Renderer.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\KEngine\Application.cpp">
@@ -1379,5 +1385,10 @@
     <ClCompile Include="src\kepch.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="src\Platform\OpenGL\OpenGLContext.cpp" />
+    <ClCompile Include="src\KEngine\Renderer\Shader.cpp" />
+    <ClCompile Include="src\KEngine\Renderer\Buffer.cpp" />
+    <ClCompile Include="src\Platform\OpenGL\OpenGLBuffer.cpp" />
+    <ClCompile Include="src\KEngine\Renderer\Renderer.cpp" />
   </ItemGroup>
 </Project>

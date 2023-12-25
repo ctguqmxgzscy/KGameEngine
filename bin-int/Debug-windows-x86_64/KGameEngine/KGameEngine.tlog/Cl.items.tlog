@@ -1,3 +1,8 @@
+D:\K_GameEngine\KGameEngine\KGameEngine\src\KEngine\Renderer\Renderer.cpp;D:\K_GameEngine\KGameEngine\bin-int\Debug-windows-x86_64\KGameEngine\Renderer.obj
+D:\K_GameEngine\KGameEngine\KGameEngine\src\KEngine\Renderer\Buffer.cpp;D:\K_GameEngine\KGameEngine\bin-int\Debug-windows-x86_64\KGameEngine\Buffer.obj
+D:\K_GameEngine\KGameEngine\KGameEngine\src\KEngine\Renderer\Shader.cpp;D:\K_GameEngine\KGameEngine\bin-int\Debug-windows-x86_64\KGameEngine\Shader.obj
+D:\K_GameEngine\KGameEngine\KGameEngine\src\Platform\OpenGL\OpenGLBuffer.cpp;D:\K_GameEngine\KGameEngine\bin-int\Debug-windows-x86_64\KGameEngine\OpenGLBuffer.obj
+D:\K_GameEngine\KGameEngine\KGameEngine\src\Platform\OpenGL\OpenGLContext.cpp;D:\K_GameEngine\KGameEngine\bin-int\Debug-windows-x86_64\KGameEngine\OpenGLContext.obj
 D:\K_GameEngine\KGameEngine\KGameEngine\src\KEngine\Application.cpp;D:\K_GameEngine\KGameEngine\bin-int\Debug-windows-x86_64\KGameEngine\Application.obj
 D:\K_GameEngine\KGameEngine\KGameEngine\src\KEngine\ImGui\ImGuiBuild.cpp;D:\K_GameEngine\KGameEngine\bin-int\Debug-windows-x86_64\KGameEngine\ImGuiBuild.obj
 D:\K_GameEngine\KGameEngine\KGameEngine\src\KEngine\ImGui\ImGuiLayer.cpp;D:\K_GameEngine\KGameEngine\bin-int\Debug-windows-x86_64\KGameEngine\ImGuiLayer.obj

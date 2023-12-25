@@ -1,8 +1,10 @@
 #pragma once
 
 #include "KEngine/Window.h"
+#include "KEngine/Renderer/GraphicsContext.h"
 
-#include "GLFW/glfw3.h"
+#include <GLFW/glfw3.h>
+
 
 namespace KEngine {
 
@@ -31,7 +33,8 @@ namespace KEngine {
 		virtual void Shutdown();
 	private:
 		GLFWwindow* m_Window;
-		
+		GraphicsContext* m_Context;
+
 		struct WindowData
 		{
 			std::string Title;
