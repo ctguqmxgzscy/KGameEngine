@@ -143,6 +143,7 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\Platform\OpenGL\OpenGLVertexArray.h" />
     <ClInclude Include="src\KEngine\Renderer\Renderer.h" />
     <ClInclude Include="src\KEngine\Renderer\Buffer.h" />
     <ClInclude Include="src\KEngine\Renderer\Shader.h" />
@@ -585,8 +586,10 @@
     <ClInclude Include="src\Platform\Windows\WindowsInput.h" />
     <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
     <ClInclude Include="src\kepch.h" />
+    <ClInclude Include="src\KEngine\Renderer\VertexArray.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Platform\OpenGL\OpenGLVertexArray.cpp" />
     <ClCompile Include="src\KEngine\Renderer\Renderer.cpp" />
     <ClCompile Include="src\KEngine\Renderer\Buffer.cpp" />
     <ClCompile Include="src\KEngine\Renderer\Shader.cpp" />
@@ -603,6 +606,7 @@
     <ClCompile Include="src\kepch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="src\KEngine\Renderer\VertexArray.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="ThirdParty\GLFW\GLFW.vcxproj">
