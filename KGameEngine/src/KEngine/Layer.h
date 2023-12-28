@@ -1,6 +1,7 @@
 #pragma once
 
 #include "KEngine/Core.h"
+#include "KEngine/Core/Timestep.h"
 #include "KEngine/Events/Event.h"
 
 namespace KEngine {
@@ -13,7 +14,7 @@ namespace KEngine {
 
 		virtual void OnAttach() {}
 		virtual void OnDetach() {}
-		virtual void OnUpdate() {}
+		virtual void OnUpdate(Timestep timestep) {}
 		virtual void OnImGuiRender() {}
 		virtual void OnEvent(Event& event) {}
 

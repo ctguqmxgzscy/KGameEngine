@@ -8,10 +8,7 @@
 #include "KEngine/Events/ApplicationEvent.h"
 
 #include "KEngine/ImGui/ImGuiLayer.h"
-
-#include "KEngine/Renderer/Shader.h"
-#include "KEngine/Renderer/Buffer.h"
-#include "KEngine/Renderer/VertexArray.h"
+#include "KEngine/Core/Timestep.h"
 
 namespace KEngine {
 
@@ -32,17 +29,14 @@ namespace KEngine {
 	private:
 		bool OnWindowClose(WindowCloseEvent& e);
 		
+	private:
+
 		bool m_Running = true;
 		std::unique_ptr<Window> m_Window;
 		ImGuiLayer* m_ImGuiLayer;
 		LayerStack m_LayerStack;
-
-		std::shared_ptr<Shader> m_Shader;
-		std::shared_ptr<VertexArray> m_VertexArray;
-
-		std::shared_ptr<Shader> m_BlueShader;
-		std::shared_ptr<VertexArray> m_SquareVA;
-
+		Timestep m_Timestep;
+		float m_LastFrameTime = 0.0f;
 	private:
 		static Application* s_Instance;
 	};

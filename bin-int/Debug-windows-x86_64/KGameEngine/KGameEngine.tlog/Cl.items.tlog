@@ -1,3 +1,5 @@
+D:\K_GameEngine\KGameEngine\KGameEngine\src\Platform\OpenGL\OpenGLShader.cpp;D:\K_GameEngine\KGameEngine\bin-int\Debug-windows-x86_64\KGameEngine\OpenGLShader.obj
+D:\K_GameEngine\KGameEngine\KGameEngine\src\KEngine\Renderer\OrthographicCamera.cpp;D:\K_GameEngine\KGameEngine\bin-int\Debug-windows-x86_64\KGameEngine\OrthographicCamera.obj
 D:\K_GameEngine\KGameEngine\KGameEngine\src\Platform\OpenGL\OpenGLRendererAPI.cpp;D:\K_GameEngine\KGameEngine\bin-int\Debug-windows-x86_64\KGameEngine\OpenGLRendererAPI.obj
 D:\K_GameEngine\KGameEngine\KGameEngine\src\KEngine\Renderer\RenderCommand.cpp;D:\K_GameEngine\KGameEngine\bin-int\Debug-windows-x86_64\KGameEngine\RenderCommand.obj
 D:\K_GameEngine\KGameEngine\KGameEngine\src\KEngine\Renderer\RendererAPI.cpp;D:\K_GameEngine\KGameEngine\bin-int\Debug-windows-x86_64\KGameEngine\RendererAPI.obj
@@ -17,3 +19,4 @@ D:\K_GameEngine\KGameEngine\KGameEngine\src\Platform\Windows\WindowsInput.cpp;D:
 D:\K_GameEngine\KGameEngine\KGameEngine\src\Platform\Windows\WindowsWindow.cpp;D:\K_GameEngine\KGameEngine\bin-int\Debug-windows-x86_64\KGameEngine\WindowsWindow.obj
 D:\K_GameEngine\KGameEngine\KGameEngine\src\kepch.cpp;D:\K_GameEngine\KGameEngine\bin-int\Debug-windows-x86_64\KGameEngine\kepch.obj
 D:\K_GameEngine\KGameEngine\KGameEngine\src\KEngine\Renderer\VertexArray.cpp;D:\K_GameEngine\KGameEngine\bin-int\Debug-windows-x86_64\KGameEngine\VertexArray.obj
+D:\K_GameEngine\KGameEngine\KGameEngine\src\KEngine\Core\Timestep.cpp;D:\K_GameEngine\KGameEngine\bin-int\Debug-windows-x86_64\KGameEngine\Timestep.obj

@@ -1362,6 +1362,8 @@
     <ClInclude Include="src\KEngine\Renderer\RenderCommand.h" />
     <ClInclude Include="src\Platform\OpenGL\OpenGLRendererAPI.h" />
     <ClInclude Include="src\KEngine\Renderer\OrthographicCamera.h" />
+    <ClInclude Include="src\KEngine\Core\Timestep.h" />
+    <ClInclude Include="src\Platform\OpenGL\OpenGLShader.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\KEngine\Application.cpp">
@@ -1402,5 +1404,7 @@
     <ClCompile Include="src\KEngine\Renderer\RenderCommand.cpp" />
     <ClCompile Include="src\Platform\OpenGL\OpenGLRendererAPI.cpp" />
     <ClCompile Include="src\KEngine\Renderer\OrthographicCamera.cpp" />
+    <ClCompile Include="src\KEngine\Core\Timestep.cpp" />
+    <ClCompile Include="src\Platform\OpenGL\OpenGLShader.cpp" />
   </ItemGroup>
 </Project>
